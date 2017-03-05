@@ -1,6 +1,8 @@
 package com.bteam.sharedj.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -19,6 +21,7 @@ public class MainActivity extends BaseActivity {
     private DrawerLayout mDrawerLayout;
     private SlidingUpPanelLayout panelLayout;
     private NavigationView navigationView;
+    Handler navDrawerRunnable = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +32,12 @@ public class MainActivity extends BaseActivity {
         panelLayout = (SlidingUpPanelLayout) findViewById(R.id.sliding_layout);
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
-
+        setPanelSlideListeners(panelLayout);
+        navDrawerRunnable.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+            }
+        }, 700);
     }
 
     @Override
@@ -51,6 +59,7 @@ public class MainActivity extends BaseActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
 
     @Override
     public void onBackPressed() {
