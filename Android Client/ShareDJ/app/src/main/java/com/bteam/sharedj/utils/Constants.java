@@ -16,11 +16,10 @@ package com.bteam.sharedj.utils;
 
 public class Constants {
 
-    public static final String NAVIGATE_LIBRARY = "navigate_library";
-    public static final String NAVIGATE_PLAYLIST = "navigate_playlist";
-    public static final String NAVIGATE_QUEUE = "navigate_queue";
-    public static final String NAVIGATE_ALBUM = "navigate_album";
-    public static final String NAVIGATE_ARTIST = "navigate_artist";
+    public static final String NAVIGATE_HOME = "navigate_home";
+    public static final String NAVIGATE_GENRES = "navigate_genres";
+    public static final String NAVIGATE_ARTISTS = "navigate_artist";
+    public static final String NAVIGATE_FAVORITE = "navigate_favorite";
     public static final String NAVIGATE_NOWPLAYING = "navigate_nowplaying";
 
     public static final String NAVIGATE_PLAYLIST_RECENT = "navigate_playlist_recent";

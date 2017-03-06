@@ -6,25 +6,22 @@
         android:id="@+id/group1"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_library"
+            android:id="@+id/nav_home"
 
-            android:title="@string/library" />
+            android:title="@string/home" />
         <item
-            android:id="@+id/nav_playlists"
+            android:id="@+id/nav_genres"
 
-            android:title="@string/playlists" />
+            android:title="@string/genres" />
         <item
-            android:id="@+id/nav_folders"
+            android:id="@+id/nav_artist"
 
-            android:title="@string/folders" />
+            android:title="@string/artist" />
         <item
-            android:id="@+id/nav_queue"
+            android:id="@+id/nav_favorite"
 
-            android:title="@string/playing_queue" />
-        <item
-            android:id="@+id/nav_nowplaying"
-            android:checkable="false"
-            android:title="@string/now_playing" />
+            android:title="@string/favorite" />
+
 
     </group>
 
@@ -41,9 +38,6 @@
             android:id="@+id/nav_about"
             android:title="@string/about" />
 
-        <item
-            android:id="@+id/nav_donate"
-            android:title="Support development" />
 
     </group>
 

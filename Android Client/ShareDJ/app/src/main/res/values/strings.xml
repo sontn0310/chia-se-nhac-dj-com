@@ -64,6 +64,12 @@
     <string name="action_equalizer">Equalizer</string>
     <string name="search_library">Search Library</string>
 
+    <string name="home">Home</string>
+    <string name="genres">Genres</string>
+    <string name="artist">Artist</string>
+    <string name="favorite">Favorite</string>
+
+
     <string name="select_theme">Select Theme</string>
     <string name="choose_theme_throughout">Choose a theme to be used throughout the app.</string>
     <string name="choose_start_page">Choose the start page to be displayed on launch.</string>
@@ -84,6 +90,7 @@
     <string name="summary_xposed_trackselector">Requires Xposed and XMediaNotificationTrackSelector Xposed module to be installed. This will provide access to playing queue from the notification bar itself.</string>
     <string name="xposed_trackselector">Playing queue support in notification</string>
     <string name="currently_selected">Currently Selected</string>
+    <string name="error">Parse data error!</string>
 
     <string name="dark_theme">Dark Theme</string>
     <string name="dark_theme_summary">Apply a dark theme throughout the app</string>

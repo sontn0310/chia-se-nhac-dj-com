@@ -259,7 +259,8 @@ public class MusicService extends Service {
         super.onCreate();
 
         mNotificationManager = NotificationManagerCompat.from(this);
-
+        mPlaybackStateStore = MusicPlaybackState.getInstance(this);
+        mRecentStore = RecentStore.getInstance(this);
 
         mHandlerThread = new HandlerThread("MusicPlayerHandler",
                 android.os.Process.THREAD_PRIORITY_BACKGROUND);
@@ -1286,6 +1287,7 @@ public class MusicService extends Service {
     }
 
     public boolean openFile(final String path) {
+//        path = "http://www56.zippyshare.com/downloadMusicHQ?key=Dne4x6wI";
         if (D) Log.d(TAG, "openFile: path = " + path);
         synchronized (this) {
             if (path == null) {
